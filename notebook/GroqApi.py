@@ -15,10 +15,15 @@ from langchain_community.llms import Ollama
 import session_info
 session_info.show()
 
+from dotenv import load_dotenv
+import os
+
+load_dotenv(dotenv_path=r"C:\Users\hamza\Desktop\ChatbotRag\ChatBot_RAG\src\.env")
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+
 """## Test Groq """
 #https://console.groq.com/keys
 #https://console.groq.com/playground
-GROQ_API_KEY ="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"
 groq_llm = ChatGroq(model_name="openai/gpt-oss-20b", temperature=0,  api_key=GROQ_API_KEY)
 system_message ="""
 Classify the sentiment of the review presented in the input as 'positive' or 'negative'
