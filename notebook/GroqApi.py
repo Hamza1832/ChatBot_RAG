@@ -18,8 +18,8 @@ session_info.show()
 from dotenv import load_dotenv
 import os
 
-load_dotenv(dotenv_path=r"C:\Users\hamza\Desktop\ChatbotRag\ChatBot_RAG\src\.env")
-GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+#load_dotenv(dotenv_path=r"C:\Users\hamza\Desktop\ChatbotRag\ChatBot_RAG\src\.env")
+#GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
 """## Test Groq """
 #https://console.groq.com/keys
